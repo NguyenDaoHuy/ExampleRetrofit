@@ -32,10 +32,12 @@ public interface ApiService2 {
     @POST("/posts")
     Call<User> senUsers(@Body User user);
 
+
     //link API : http://apilayer.net/api/user/list
     @GET("api/user/list")
     Call<User> getListUser();
 
+    //đường link API có tham số động
     //link API : http://apilayer.net/api/group/1/user/list
     @GET("api/group/{id}/user/list")
     Call<User> getListUserFromGroup(@Path("id") int groupId);

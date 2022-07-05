@@ -79,6 +79,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    //call API phương thức POST
     private void callApiPost3(){
         User user = new User(1,"Huy 1");
         ApiService2.apiService.senUsers(user).enqueue(new Callback<User>() {
